@@ -17,8 +17,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <TextView
-        android:id="@+id/textViewUnitsOfA"
-        android:text="units of A is"
+        android:id="@+id/textViewUnitsOfForeign"
+        android:text="units of foreign currency is"
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -31,8 +31,8 @@
         android:layout_height="wrap_content" />
 
     <TextView
-        android:id="@+id/textViewUnitsOfB"
-        android:text="units of B"
+        android:id="@+id/textViewUnitsOfHome"
+        android:text="units of home currency"
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

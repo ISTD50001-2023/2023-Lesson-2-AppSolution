@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     private String sharedPrefFile = "com.example.android.mainsharedprefs";
     public static final String RATE_KEY = "Rate_Key";
 
+    TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

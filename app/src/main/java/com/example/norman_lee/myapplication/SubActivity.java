@@ -9,8 +9,8 @@ import android.widget.EditText;
 public class SubActivity extends AppCompatActivity {
 
     Button buttonBackToCalculator;
-    EditText editTextSubValueOfA;
-    EditText editTextSubValueOfB;
+    EditText editTextSubValueOfHome;
+    EditText editTextSubValueOfForeign;
     public final static String INTENT_EXCH_RATE = "Exchange Rate";
     private SharedPreferences mPreferences;
     private String sharedPrefFile = "com.example.android.subsharedprefs";

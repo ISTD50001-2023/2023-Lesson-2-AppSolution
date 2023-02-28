@@ -47,4 +47,6 @@ public class ExchangeRate {
     private void instantiateMathContext(int precision){
         mathContext = new MathContext(precision, RoundingMode.HALF_UP);
     }
+
+    //TODO 2.5b override toString() to provide information on the exchange rate
 }
