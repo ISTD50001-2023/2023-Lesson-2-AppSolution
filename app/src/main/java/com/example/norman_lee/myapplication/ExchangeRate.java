@@ -27,7 +27,12 @@ public class ExchangeRate {
 
         instantiateMathContext(DEFAULT_PRECISION);
         //TODO 3.13a The constructor initializes exchangeRate by calculating the exchangeRate
-        exchangeRate = new BigDecimal(defaultRate);
+        // Assume that home and foreign strings are well-formed numbers
+        BigDecimal homeCurrency = new BigDecimal(home);
+        BigDecimal foreignCurrency = new BigDecimal(foreign);
+        /*** home = foreign * ( home / foreign) */
+        exchangeRate = homeCurrency.divide(foreignCurrency, mathContext);
+        //exchangeRate = new BigDecimal(defaultRate);
     }
 
     BigDecimal getExchangeRate(){
@@ -36,7 +41,9 @@ public class ExchangeRate {
 
     BigDecimal calculateAmount(String foreign){
         //TODO 2.5a complete this method to return the amount
-        return BigDecimal.ZERO;
+        BigDecimal foreignCurrency = new BigDecimal(foreign);
+        BigDecimal homeCurrency = foreignCurrency.multiply(exchangeRate, mathContext);
+        return homeCurrency;
     }
 
     void setPrecision(int precision){
